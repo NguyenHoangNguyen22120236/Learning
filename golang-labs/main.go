@@ -1,8 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	//"slices"
+)
+
+func add(s []int) {
+    s = append(s, 40)
+}
 
 func main() {
-    name := "John"
-    fmt.Printf("Hello %s\n", name)
+    numbers := []int{10, 20, 30}
+
+    add(numbers)
+
+    fmt.Println(numbers)
 }
